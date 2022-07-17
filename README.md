@@ -1,10 +1,10 @@
 # EAHVFA
 
-EAHVFA - A surrogate-assisted evolutionary algorithm with hypervolume triggered fidelity adjustment for noisy multiobjective integer programming
+EAHVFA - A Surrogate-Assisted Evolutionary Algorithm with Hypervolume Triggered Fidelity Adjustment for Noisy Multiobjective Integer Programming
 
 ------------------------------- Reference --------------------------------
 
-Liu S, Wang H, Yao W. A surrogate-assisted evolutionary algorithm with hypervolume triggered fidelity adjustment for noisy multiobjective integer programming in Applied Soft Computing.
+Liu S, Wang H, Yao W. A Surrogate-Assisted Evolutionary Algorithm with Hypervolume Triggered Fidelity Adjustment for Noisy Multiobjective Integer Programming in Applied Soft Computing. 2022.
 
 ------------------------------- Copyright --------------------------------
 
