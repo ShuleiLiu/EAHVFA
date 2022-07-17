@@ -3,8 +3,18 @@ import random
 import copy
 from benchmark.problems import get_fitness
 
+# ------------------------------- Reference --------------------------------
+# Liu S, Wang H, Yao W. A surrogate-assisted evolutionary algorithm with hypervolume
+# triggered fidelity adjustment for noisy multiobjective integer programming. Applied Soft Computing, 2022.
+# ------------------------------- Copyright --------------------------------
+# Copyright (c) 2022 HandingWangXD Group. Permission is granted to copy and
+# use this code for research, noncommercial purposes, provided this
+# copyright notice is retained and the origin of the code is cited. The
+# code is provided "as is" and without any warranties, express or implied.
+# ------------------------------- Developer --------------------------------
+# This code is written by Shulei Liu. Email: shuleiliu@126.com
 
-# 在问题pro的决策空间中采集size个个体，每个个体的维度是dim
+
 def sample(pro, size, dim, fidelity):
     if pro == 'uf1' or pro == 'uf2' or pro == 'uf6':
         x1_low = [0]
@@ -66,7 +76,6 @@ def sample(pro, size, dim, fidelity):
     return x, f1, f2, f3
 
 # generate the first neighborhood according to ind
-# x_1, x_other分别表示x1和其他维可取值的集合
 def neighborhood_one(ind, x_1, x_other, n_size):
     x_1 = list(x_1)
     x_other = list(x_other)
@@ -147,12 +156,9 @@ def IGD(P,Q):
 def IGD_Plus(r,s):
     size = r.shape[0]
     sum_dis = 0
-    # 依次遍历所有参考点
     for i in range(size):
         min_dis = np.inf
-        # 计算所有求得的前沿到该参考点的最短距离
         for j in range(s.shape[0]):
-            # IGD+ 距离
             plus_dis = 0
             for k in range(s.shape[1]):
                 if s[j, k] - r[i, k] > 0:
