@@ -8,7 +8,7 @@ Liu S, Wang H, Yao W. A surrogate-assisted evolutionary algorithm with hypervolu
 
 ------------------------------- Copyright --------------------------------
 
-Copyright (c) 2021 HandingWangXD Group. Permission is granted to copy and use this code for research, noncommercial purposes, provided this copyright notice is retained and the origin of the code is cited. The code is provided "as is" and without any warranties, express or implied.
+Copyright (c) HandingWangXDGroup. Permission is granted to copy and use this code for research, noncommercial purposes, provided this copyright notice is retained and the origin of the code is cited. The code is provided "as is" and without any warranties, express or implied.
 
 
 Email: shuleiliu@126.com
