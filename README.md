@@ -1,4 +1,4 @@
-## EAHVFA
+# EAHVFA
 
 EAHVFA - A surrogate-assisted evolutionary algorithm with hypervolume triggered fidelity adjustment for noisy multiobjective integer programming
 
@@ -18,3 +18,6 @@ Email: shuleiliu@126.com
 + hvwfg
 + pymoo
 + scikit-learn
+
+# Test:
+The example code of runing EAHVFA algorithm is shown in the examples folder.
